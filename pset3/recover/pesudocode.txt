@@ -1,0 +1,9 @@
+open card file
+repeat until end of card
+    read 512 bytes
+    start of new jpeg ?
+        yes: >> already found
+        no:
+    aready found ?
+        yes : close prev and start new
+        no : start new jpeg / if no discard 512 and continue

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <!-- http://getbootstrap.com/docs/4.1/components/alerts/ -->
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Submitted</h4>
+        {% autoescape false %}
+            {{ message }}
+        {% endautoescape %}
+    </div>
+
+{% endblock %}

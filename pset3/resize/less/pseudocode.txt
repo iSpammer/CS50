@@ -1,0 +1,31 @@
+for each row
+    for each pixel in row
+        write to the outfile n times
+    write outfile's padding
+    skip over infile's padding
+    
+fseek ! for padding cursor skip
+
+rewrite method
+for each row
+    for each pixel
+        write to array n times
+    for n times
+        write array to outfile
+        write outfile padding
+    skip over infile padding
+    fseek ^^
+
+recopy  method
+for each row
+    for n-1 times
+        write pixel padding to outfile
+        send infile cursor back
+    write pixels, padding to outfile
+    skip over infile padding
+    
+    
+    
+    
+    // Copies a BMP file
+

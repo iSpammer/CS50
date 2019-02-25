@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <!-- http://getbootstrap.com/docs/4.1/content/typography/ -->
+    <h1 class="mb-3">Form</h1>
+
+    <!-- http://getbootstrap.com/docs/4.1/components/forms/ -->
+    <form action="/form" method="post">
+
+
+ <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input type="text" class="form-control" id="firstName" aria-describedby="firstNameHelp" name="fname" placeholder="Enter your First Name">
+    <small id="firstNameHelp" class="form-text text-muted">We'll never share your name with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="secondName">Second Name</label>
+    <input type="text" class="form-control" id="secondName" name="lname" placeholder="Enter your Second name">
+  </div>
+
+
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="other"> Other<br>
+
+        <select>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+
+
+        <!-- http://getbootstrap.com/docs/4.1/components/buttons/ -->
+        <button class="btn btn-primary" type="submit">Submit</button>
+
+    </form>
+
+    <script>
+
+        /* TODO */
+
+    </script>
+
+{% endblock %}
